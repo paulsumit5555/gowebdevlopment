@@ -1,0 +1,4 @@
+1. go mod init example.com/user
+2. go build
+3. if required execute
+  go get "third party liabrary"
