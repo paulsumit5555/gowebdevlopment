@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
-	"encoding/json"
+	//"encoding/json"
 	"fmt"
 //	"io"
   //  "log"
@@ -130,11 +130,6 @@ fmt.Println("database ", db)
 	
 		
 		
-	fmt.Println(u)
-	uj, err := json.Marshal(u)
-	if err != nil {
-		fmt.Println(err)
-	}
-	fmt.Fprintf(w, "%s\n", uj)
-	//uc.tpl.ExecuteTemplate(w,"addEmployee.gohtml",nil)
+
+	uc.tpl.ExecuteTemplate(w,"index.gohtml",nil)
 }
